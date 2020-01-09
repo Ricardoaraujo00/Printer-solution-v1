@@ -1,0 +1,10 @@
+C:\Users\Admin\source\repos\printer1\bin\Debug\printer1.exe.config
+C:\Users\Admin\source\repos\printer1\bin\Debug\printer1.exe
+C:\Users\Admin\source\repos\printer1\bin\Debug\printer1.pdb
+C:\Users\Admin\source\repos\printer1\bin\Debug\ESC-POS-USB-NET.dll
+C:\Users\Admin\source\repos\printer1\bin\Debug\PrinterUtility.dll
+C:\Users\Admin\source\repos\printer1\bin\Debug\System.Drawing.Common.dll
+C:\Users\Admin\source\repos\printer1\obj\Debug\printer1.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\printer1\obj\Debug\printer1.csproj.CopyComplete
+C:\Users\Admin\source\repos\printer1\obj\Debug\printer1.exe
+C:\Users\Admin\source\repos\printer1\obj\Debug\printer1.pdb
