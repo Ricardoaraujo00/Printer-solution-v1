@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using PrinterUtility;
 using ESC_POS_USB_NET.Printer;
 using System.Drawing;
+using System.IO;
 
 namespace printer1
 {
@@ -16,10 +17,13 @@ namespace printer1
             Console.WriteLine("Prepare for test.. Press one key");
             Console.ReadKey();
             PrinterUtility.EscPosEpsonCommands.EscPosEpson obj = new PrinterUtility.EscPosEpsonCommands.EscPosEpson();
-            Image newImage = Image.FromFile(@"c:\photo\logo.bmp");
+            StreamReader sr = new StreamReader(@"C:\logo\58mmWidth.prn");
+            
+            Image newImage = Image.FromFile(@"c:\logo\logo.bmp");
             //var BytesValue = ImageToByteArray(newImage);
             //var BytesValue = ReadAllBytes(@"c:\photo\logo.bmp");
             byte[] BytesValue = Encoding.ASCII.GetBytes("Sier Group 1 22 333 4444");
+            BytesValue = PrintExtensions.AddBytes(BytesValue, Encoding.ASCII.GetBytes("Sier Group 1 22 333 4444\n"));
             BytesValue = PrintExtensions.AddBytes(BytesValue, Encoding.ASCII.GetBytes("Sier Group 1 22 333 4444\n"));
             BytesValue = PrintExtensions.AddBytes(BytesValue, obj.Separator());
             BytesValue = PrintExtensions.AddBytes(BytesValue, obj.FontSelect.FontC());
